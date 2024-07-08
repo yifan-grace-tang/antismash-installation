@@ -43,13 +43,13 @@ Follow the links for your platform __do not use Windows instructions for Mac or 
 For __Mac__:
 
 1. [🐍 Miniconda Installation](#-miniconda-installation-mac)
-2. [🌱 antiSMASH Installation](#%EF%B8%8F-big-scape-installation-mac)
+2. [🌱 antiSMASH Installation](#-antismash-installation-mac)
 
 For __Windows__:
 
 1. [🐧 WSL Installation](#-wsl-installation-windows)
 2. [🐍 Miniconda Installation](#-miniconda-installation-windows)
-3. [🌱 antiSMASH Installation](#%EF%B8%8F-big-scape-installation-windows)
+3. [🌱 antiSMASH Installation](#-antismash-installation-windows)
 
 # Mac Based Installation
 
@@ -84,7 +84,7 @@ zsh: command not found: conda
 4) Navigate to [this link](https://docs.anaconda.com/miniconda/#latest-miniconda-installer-links) and download the installer version as specificied in the images __DO NOT SELECT ANY OTHER INSTALLER__. Click the link under the _Name_ field to begin installation
 
 <p align="center">
-  <img src="./img/correct-miniconda-install.png" height="500">
+  <img src="https://github.com/yifan-grace-tang/bigscape-installation/blob/main/img/correct-miniconda-install.png" height="500">
 </p>
    
 
@@ -103,25 +103,25 @@ bash Miniconda3-latest-MacOSX-x86_64.sh
 7) You will now be prompted for a series of agreements that you must accept from your terminal. These are included below:
 
 <p align="center">
-  <img src="./img/conda-64bit-accept-small.png" height="99">
+  <img src="https://github.com/yifan-grace-tang/bigscape-installation/blob/main/img/conda-64bit-accept-small.png" height="99">
   <br>
   <em>Here type the word 'yes' and click enter </em>
 </p>
 
 <p align="center">
-  <img src="./img/conda-tos.png" height="283">
+  <img src="https://github.com/yifan-grace-tang/bigscape-installation/blob/main/img/conda-tos.png" height="283">
   <br>
   <em>When you see the Terms of Service (TOS) use your down arrow key to get through the text</em>
 </p>
 
 <p align="center">
-  <img src="./img/conda-tos-accept.png" height="107">
+  <img src="https://github.com/yifan-grace-tang/bigscape-installation/blob/main/img/conda-tos-accept.png" height="107">
    <br>
   <em>After you finish scrolling through the TOS type the word 'yes' to move on</em>
 </p>
 
 <p align="center">
-  <img src="./img/conda-install-accept-small.png" height="146">
+  <img src="https://github.com/yifan-grace-tang/bigscape-installation/blob/main/img/conda-install-accept-small.png" height="146">
    <br>
   <em>Complete the installation by clicking the 'return' key</em>  
 </p>
@@ -134,88 +134,19 @@ bash Miniconda3-latest-MacOSX-x86_64.sh
 conda -V
 ```
 
-10) If the `conda` is sucessfully installed, you will see a message similar to the one below (versions can differ). Proceed to the [BiG-SCAPE Installation](#%EF%B8%8F-big-scape-installation-mac) section.
+10) If the `conda` is sucessfully installed, you will see a message similar to the one below (versions can differ). Proceed to the [antiSMASH Installation](-antismash-installation-mac) section.
 
 ```bash
 conda 24.5.0
 ```
 
-## ⚙️ BiG-SCAPE Installation (Mac)
+## 	🌱 antiSMASH Installation (Mac)
 
-1) Open a new `terminal` <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Terminalicon2.png/240px-Terminalicon2.png" width="20" height="20" align="center"/>  window.
-
-2) Paste into your terminal:
-
-```bash
-cd Desktop && mkdir bigscape && cd bigscape
-```
-3) Paste into your terminal:
-
-```bash
-brew install wget
-```
-
-4) ⌛ Paste into your terminal:
-
-```bash
-wget https://github.com/medema-group/BiG-SCAPE/archive/refs/tags/v1.1.5.zip
-```
-5) Paste into your terminal:
-
-```bash
-unzip v1.1.5
-```
-6) Paste into your terminal:
-```bash
-cd BiG-SCAPE-1.1.5
-```
-7) ⌛ Paste into your terminal:
-
-```bash
-conda env create -f bigscape_dependencies.yml
-```
-
-8) Finally, copy and paste the command below. You will see a change in your terminal after this completes with a `(bigscape)` in the beginning of your line:
-
-```bash
-conda activate bigscape
-```
-
-<p align="center">
-  <img src="./img/bigscape-env-highlight-anno.png" height="500">
-</p>
-
-9) Validate the installation by pasting the command below:
-
-```bash
-python bigscape.py --version
-```
-10) ⌛ Paste into your terminal:
-
-```bash
-wget https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz && gunzip Pfam-A.hmm.gz
-```
-
-11) ⌛ Paste into your terminal:
-```bash
-hmmpress Pfam-A.hmm
-```
-
-12) You should now be able to run BiG-SCAPE, perform one last verification step and copy-paste the command below to see the options for running `bigscape`. _Make sure that your terminal has the `(bigscape)` in the beginning of your line:
-
-```bash
-python bigscape.py -h
-```
-
-<p align="center">
-  <img src="./img/final-command.png" height=700> 
-  <br>
-<em>You should see this list of commands that you can use on your bigscape query.</em>
-</p>
+`todo`
 
 # Windows Based Installation
 
-Follow these instructions __only__ if you are using a Windows machine. The expectation is that you first do `wsl` installation, then `conda` installation, then `bigscape` installation.
+Follow these instructions __only__ if you are using a Windows machine. The expectation is that you first do `wsl` installation, then `conda` installation, then `antismash` installation.
 
 ## 🐧 WSL Installation (Windows)
 
@@ -240,7 +171,7 @@ wsl --install
 8) The first time you open this app you will be prompted to create a username and password. _This is in no way tied to your Windows account so choose whatever you would like_. This input will look like below:
 
 <p align="center">
-  <img src="./img/wsl.png" height=130> 
+  <img src="https://github.com/yifan-grace-tang/bigscape-installation/blob/main/img/wsl.png" height=130> 
   <br>
   <em>Type username, click enter, type password, click enter, retype password, click enter.</em>
 </p>
@@ -267,7 +198,7 @@ wsl --install
 conda -V
 ```
 
-2) If the `conda` is already installed, you will see a message similar to the one below (versions can differ). Proceed to the [BiG-SCAPE Installation](#%EF%B8%8F-big-scape-installation-windows) section.
+2) If the `conda` is already installed, you will see a message similar to the one below (versions can differ). Proceed to the [antiSMASH Installation](-antismash-installation-windows) section.
 
 ```bash
 conda 24.5.0
@@ -304,123 +235,50 @@ bash Miniconda3-latest-Linux-x86_64.sh
 7) You will now be prompted for a series of agreements that you must accept from your terminal. These are included below:
 
 <p align="center">
-  <img src="./img/miniconda_windows_license.png" height="99">
+  <img src="https://github.com/yifan-grace-tang/bigscape-installation/blob/main/img/miniconda_windows_license.png" height="99">
   <br>
   <em>Here click enter </em>
 </p>
 
 <p align="center">
-  <img src="./img/miniconda_windows_lic_scroll.png" height="150">
+  <img src="https://github.com/yifan-grace-tang/bigscape-installation/blob/main/img/miniconda_windows_lic_scroll.png" height="150">
   <br>
   <em>When you see the Terms of Service (TOS) use your down arrow key to get through the text</em>
 </p>
 
 <p align="center">
-  <img src="./img/miniconda_lic_final.png" height="110">
+  <img src="https://github.com/yifan-grace-tang/bigscape-installation/blob/main/img/miniconda_lic_final.png" height="110">
    <br>
   <em>After you finish scrolling through the TOS type the word 'yes' to move on</em>
 </p>
 
 <p align="center">
-  <img src="./img/miniconda_install_accept.png" height="183">
+  <img src="https://github.com/yifan-grace-tang/bigscape-installation/blob/main/img/miniconda_install_accept.png" height="183">
    <br>
   <em>Confirm the installation by clicking the 'return' key</em>  
 </p>
 
 <p align="center">
-  <img src="./img/conda_windows_accept_final.png" height="85">
+  <img src="https://github.com/yifan-grace-tang/bigscape-installation/blob/main/img/conda_windows_accept_final.png" height="85">
    <br>
   <em>Finalize the installation by typing 'yes' and clicking enter</em>  
 </p>
 
 
-9) Close your `ubuntu` window and open a __new__ `ubuntu` window.
+8) Close your `ubuntu` window and open a __new__ `ubuntu` window.
 
-10) Check if conda is successfully installed on your computer. Paste in your `ubuntu`:
+9) Check if conda is successfully installed on your computer. Paste in your `ubuntu`:
 
 ```bash
 conda -V
 ```
 
-10) If the `conda` is sucessfully installed, you will see a message similar to the one below (versions can differ). Proceed to the [BiG-SCAPE Installation](#%EF%B8%8F-big-scape-installation-windows) section.
+10) If the `conda` is sucessfully installed, you will see a message similar to the one below (versions can differ). Proceed to the [antiSMASH Installation](-antismash-installation-windows) section.
 
 ```bash
 conda 24.5.0
 ```
 
-## ⚙️ BiG-SCAPE Installation (Windows)
+## 	🌱 antiSMASH Installation (Windows)
 
-1) Open a new `ubuntu` <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/UbuntuCoF.svg/1024px-UbuntuCoF.svg.png" width="20" height="20" align="center"/>  window.
-
-2) Paste into your ubuntu. Replace __USERNAME__ with your Windows username:
-
-```bash
-cd ../../mnt/c/Users/USERNAME/Documents && mkdir bigscape && cd bigscape
-```
-3) ⌛ Paste into your ubuntu:
-
-```bash
-wget https://github.com/medema-group/BiG-SCAPE/archive/refs/tags/v1.1.5.zip
-```
-
-4) Paste into your ubuntu. You will be prompted for the password you created earlier in [WSL Installation](#-wsl-installation-windows):
-
-```bash
-sudo apt install unzip
-```
-
-5) Paste into your terminal:
-
-```bash
-unzip v1.1.5
-```
-
-6) Paste into your terminal:
-```bash
-cd BiG-SCAPE-1.1.5
-```
-
-7) ⌛ Paste into your terminal:
-
-```bash
-conda env create -f bigscape_dependencies.yml
-```
-
-8) Finally, copy and paste the command below. You will see a change in your terminal after this completes with a `(bigscape)` in the beginning of your line:
-
-```bash
-conda activate bigscape
-```
-
-<p align="center">
-  <img src="./img/conda_activate_bigscape_windows.png" height="70">
-</p>
-
-9) Validate the installation by pasting the command below:
-
-```bash
-python bigscape.py --version
-```
-10) ⌛ Paste into your terminal:
-
-```bash
-wget https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz && gunzip Pfam-A.hmm.gz
-```
-
-11) ⌛ Paste into your terminal:
-```bash
-hmmpress Pfam-A.hmm
-```
-
-12) You should now be able to run BiG-SCAPE, perform one last verification step and copy-paste the command below to see the options for running `bigscape`. _Make sure that your terminal has the `(bigscape)` in the beginning of your line:
-
-```bash
-python bigscape.py -h
-```
-
-<p align="center">
-  <img src="./img/python_bigscape_h_windows.png" height=500> 
-  <br>
-<em>You should see this list of commands that you can use on your bigscape query.</em>
-</p>
-
+`todo`
