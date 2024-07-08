@@ -69,7 +69,7 @@ Follow these instructions __only__ if you are using a Mac. The expectation is th
 conda -V
 ```
 
-2) If the `conda` is already installed, you will see a message similar to the one below (versions can differ). Proceed to the [BiG-SCAPE Installation](#%EF%B8%8F-big-scape-installation-mac) section.
+2) If the `conda` is already installed, you will see a message similar to the one below (versions can differ). Proceed to the [antiSMASH Installation](-antismash-installation-mac) section.
 
 ```bash
 conda 24.5.0
