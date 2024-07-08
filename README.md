@@ -1,6 +1,5 @@
-# antiSMASH Installation Guide
-
-<img src="https://antismash.secondarymetabolites.org/images/antismash_logo.svg" height="200">
+<img src="https://avatars.githubusercontent.com/u/17174811?s=200&v=4" align="left" width="60"/>
+<h1> Installation Guide </h1>
 
 __Please read through this entire guide before getting started as it will save you a lot of time troubleshooting errors later on__. 
 
