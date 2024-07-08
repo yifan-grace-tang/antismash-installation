@@ -141,7 +141,33 @@ conda 24.5.0
 
 ## 	🌱 antiSMASH Installation (Mac)
 
-`todo`
+1. From your `terminal` <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Terminalicon2.png/240px-Terminalicon2.png" width="20" height="20" align="center"/> copy and paste the below command:
+
+```bash
+conda config --add channels defaults && conda config --add channels bioconda && conda config --add channels conda-forge && conda config --set channel_priority strict
+```
+
+2. ⌛ Copy and paste this command:
+
+```bash
+conda create -n antismash antismash
+```
+
+3. During the above command you will be asked to confirm the installation, type 'yes' and click enter as shown below:
+
+_insert image_
+
+3. Copy and paste this command:
+
+```bash
+conda activate antismash
+```
+
+4. ⌛ Copy and paste this command:
+
+```bash
+download-antismash-databases
+``` 
 
 # Windows Based Installation
 
