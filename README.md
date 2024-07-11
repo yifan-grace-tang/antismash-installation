@@ -68,7 +68,7 @@ Follow these instructions __only__ if you are using a Mac. The expectation is th
 conda -V
 ```
 
-2) If the `conda` is already installed, you will see a message similar to the one below (versions can differ). Proceed to the [antiSMASH Installation](-antismash-installation-mac) section.
+2) If the `conda` is already installed, you will see a message similar to the one below (versions can differ). Proceed to the [antiSMASH Installation](#-antismash-installation-mac) section.
 
 ```bash
 conda 24.5.0
@@ -133,7 +133,7 @@ bash Miniconda3-latest-MacOSX-x86_64.sh
 conda -V
 ```
 
-10) If the `conda` is sucessfully installed, you will see a message similar to the one below (versions can differ). Proceed to the [antiSMASH Installation](-antismash-installation-mac) section.
+10) If the `conda` is sucessfully installed, you will see a message similar to the one below (versions can differ). Proceed to the [antiSMASH Installation](#-antismash-installation-mac) section.
 
 ```bash
 conda 24.5.0
